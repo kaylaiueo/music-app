@@ -1,7 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 *,
 html,
@@ -27,13 +26,13 @@ input[type="range"]::-webkit-slider-thumb {
   width: 1px;
 }
 
-input[type="”range”"]::-moz-range-thumb {
+input[type="range"]::-moz-range-thumb {
   -webkit-appearance: none;
   appearance: none;
   width: 1px;
 }
 
-input[type="”range”"]::-ms-thumb {
+input[type="range"]::-ms-thumb {
   -webkit-appearance: none;
   appearance: none;
   width: 1px;
