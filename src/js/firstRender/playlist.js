@@ -69,6 +69,90 @@ const playlist = [
     artist: "Billie Eilish",
     title: "i love you",
   },
+  {
+    thumbnail:
+      "https://pipedproxy.kavin.rocks/vi_webp/CuuOPUM90gs/maxresdefault.webp?host=i.ytimg.com",
+    song: "CuuOPUM90gs",
+    artist: "Chelsea Cutler",
+    title: "Your Shirt",
+  },
+  {
+    thumbnail:
+      "https://pipedproxy.kavin.rocks/vi_webp/AdEKgwUqPKI/maxresdefault.webp?host=i.ytimg.com",
+    song: "AdEKgwUqPKI",
+    artist: "SZA",
+    title: "Kill Bill",
+  },
+  {
+    thumbnail:
+      "https://pipedproxy.kavin.rocks/vi_webp/1jbp5mb6AUU/maxresdefault.webp?host=i.ytimg.com",
+    song: "1jbp5mb6AUU",
+    artist: "Daniel Caesar",
+    title: "Best Part (feat. H.E.R.)",
+  },
+  {
+    thumbnail:
+      "https://pipedproxy.kavin.rocks/vi_webp/HZbsLxL7GeM/maxresdefault.webp?host=i.ytimg.com",
+    song: "HZbsLxL7GeM",
+    artist: "Ruth B.",
+    title: "Dandelions",
+  },
+  {
+    thumbnail:
+      "https://pipedproxy.kavin.rocks/vi_webp/tEnT5x4ow5I/maxresdefault.webp?host=i.ytimg.com",
+    song: "tEnT5x4ow5I",
+    artist: "Stephanie Poetri",
+    title: "I Love You 3000",
+  },
+  {
+    thumbnail:
+      "https://pipedproxy.kavin.rocks/vi_webp/kPlSyYtE63M/maxresdefault.webp?host=i.ytimg.com",
+    song: "kPlSyYtE63M",
+    artist: "Stephen Sanchez",
+    title: "Until I Found You (Em Beihold Version)",
+  },
+  {
+    thumbnail:
+      "https://pipedproxy.kavin.rocks/vi_webp/WMTqf7PSjHw/maxresdefault.webp?host=i.ytimg.com",
+    song: "WMTqf7PSjHw",
+    artist: "Arctic Monkeys",
+    title: "i wanna be yours - (sped up)",
+  },
+  {
+    thumbnail:
+      "https://pipedproxy.kavin.rocks/vi_webp/xMNZFgknH2M/maxresdefault.webp?host=i.ytimg.com",
+    song: "xMNZFgknH2M",
+    artist: "HONNE",
+    title: "Location Unknown ◐ (feat. BEKA) (Brooklyn Session)",
+  },
+  {
+    thumbnail:
+      "https://pipedproxy.kavin.rocks/vi/TA1W-pHNKl8/maxresdefault.jpg?host=i.ytimg.com",
+    song: "TA1W-pHNKl8",
+    artist: "Christina Perri",
+    title: "A Thousand Years",
+  },
+  {
+    thumbnail:
+      "https://pipedproxy.kavin.rocks/vi/s5xWEk_TMFQ/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCg0_OszmMd_0xLKVsfut0eOLpAuQ&host=i.ytimg.com",
+    song: "s5xWEk_TMFQ",
+    artist: "Aziz Hedra",
+    title: "somebody's pleasure - sped up",
+  },
+  {
+    thumbnail:
+      "https://pipedproxy.kavin.rocks/vi_webp/5YkYwiSJKDI/maxresdefault.webp?host=i.ytimg.com",
+    song: "5YkYwiSJKDI",
+    artist: "yuji",
+    title: "Old Love",
+  },
+  {
+    thumbnail:
+      "https://pipedproxy.kavin.rocks/vi_webp/f1De87ETXwo/maxresdefault.webp?host=i.ytimg.com",
+    song: "f1De87ETXwo",
+    artist: "George Benson",
+    title: "Nothing's Gonna Change My Love for You",
+  },
 ];
 
 export default playlist;

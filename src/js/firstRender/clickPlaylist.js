@@ -9,32 +9,32 @@ export default function clickPlaylist(myPlaylist) {
 
       loadPlaylist(musicIndex);
 
-      next.addEventListener("click", function () {
+      function nextMusic() {
         musicIndex++;
         if (musicIndex == myPlaylist.length) {
           musicIndex = 0;
         }
         loadPlaylist(musicIndex);
-      });
+      }
 
-      prev.addEventListener("click", function () {
+      function prevMusic() {
         if (musicIndex == 0) {
           musicIndex = myPlaylist.length;
         }
         musicIndex--;
         loadPlaylist(musicIndex);
-      });
+      }
+
+      next.addEventListener("click", nextMusic);
+
+      prev.addEventListener("click", prevMusic);
 
       mainSong.addEventListener("ended", function () {
         let getText = repeatBtn.innerText;
 
         switch (getText) {
           case "repeat":
-            musicIndex++;
-            if (musicIndex == myPlaylist.length) {
-              musicIndex = 0;
-            }
-            loadPlaylist(musicIndex);
+            nextMusic();
             break;
           case "repeat_one":
             mainSong.currentTime = 0;

@@ -58,18 +58,16 @@ export function playPause() {
   });
 }
 
-// export function favorite() {
-//   const favorite = document.getElementById("favorite");
+const favorite = document.getElementById("favorite");
 
-//   favorite.addEventListener("click", function () {
-//     let getText = favorite.innerText;
-//     switch (getText) {
-//       case "favorite_border":
-//         favorite.innerText = "favorite";
-//         break;
-//       case "favorite":
-//         favorite.innerText = "favorite_border";
-//         break;
-//     }
-//   });
-// }
+favorite.addEventListener("click", function () {
+  let getText = favorite.innerText;
+  switch (getText) {
+    case "favorite_border":
+      favorite.innerText = "favorite";
+      break;
+    case "favorite":
+      favorite.innerText = "favorite_border";
+      break;
+  }
+});

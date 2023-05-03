@@ -1,13 +1,17 @@
-import greeting from "./components/greeting.js";
+import greetings from "./components/greetings.js";
 import songDuration from "./components/songDuration.js";
 import searchInput from "./components/searchInput.js";
 import { playPause } from "./components/control.js";
 import firstRender from "./firstRender/firstRender.js";
+import handleDarkMode from "./components/handleDarkMode.js";
+import showAboutMenu from "./components/showAboutMenu.js";
 
 export default function app() {
   firstRender();
   playPause();
-  greeting();
+  greetings();
   songDuration();
   searchInput();
+  handleDarkMode();
+  showAboutMenu();
 }

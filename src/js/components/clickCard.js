@@ -49,13 +49,9 @@ export default function clickCard(specificSong, mergedNextPage) {
         loadRelatedMusic(musicIndex, relatedStreams);
       }
 
-      next.addEventListener("click", function () {
-        nextMusic();
-      });
+      next.addEventListener("click", nextMusic);
 
-      prev.addEventListener("click", function () {
-        prevMusic();
-      });
+      prev.addEventListener("click", prevMusic);
 
       mainSong.addEventListener("ended", function () {
         let getText = repeatBtn.innerText;
