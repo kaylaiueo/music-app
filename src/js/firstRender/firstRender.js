@@ -1,6 +1,9 @@
 import firstRenderCard from "./firstRenderCard.js";
 import clickPlaylist from "./clickPlaylist.js";
 import { songResult } from "../constants/constants.js";
+import clickFullPlayer from "./handleFullPlayer.js";
+import showFav from "./showFavList.js";
+import showAboutMenu from "../components/showAboutMenu.js";
 
 export default async function firstRender() {
   firstRenderCard();
@@ -10,4 +13,11 @@ export default async function firstRender() {
   clickPlaylist(myPlaylist);
 
   songResult.innerText = `Result: ${myPlaylist.length}`;
+
+  if (window.innerWidth < 500) {
+    clickFullPlayer();
+  }
+
+  showFav();
+  showAboutMenu();
 }
