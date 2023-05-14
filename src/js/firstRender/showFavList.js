@@ -5,7 +5,6 @@ import {
   songResult,
   bottomPlayer,
 } from "../constants/constants.js";
-import getFavSong from "../api/getFavSong.js";
 
 export default function showFav() {
   favBtn.onclick = () => {
