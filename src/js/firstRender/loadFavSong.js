@@ -1,19 +1,11 @@
+import handleFavorite from "../components/handleFavorite.js";
 import { playMusic } from "../components/control.js";
 import marquee from "../components/marquee.js";
-import {
-  musicArtist,
-  albumCover,
-  mainSong,
-  listSong,
-  listFavSong,
-} from "../constants/constants.js";
+import { musicArtist, albumCover, mainSong } from "../constants/constants.js";
 
-export default async function loadPlaylist(musicIndex, playlist) {
-  if (
-    listSong.children[0].id == "myPlaylist" &&
-    listFavSong.classList.contains("hidden")
-  ) {
-    const endpoint = `https://pipedapi.kavin.rocks/streams/${playlist[musicIndex].song}`;
+export default async function loadFavSong(musicIndex, favoriteUrls) {
+  if (favoriteUrls.length > 0) {
+    const endpoint = `https://pipedapi.kavin.rocks/streams/${favoriteUrls[musicIndex].song}`;
     const response = await fetch(endpoint);
     const { uploader, title, thumbnailUrl, audioStreams } =
       await response.json();
@@ -28,5 +20,9 @@ export default async function loadPlaylist(musicIndex, playlist) {
     albumCover.src = thumbnailUrl;
     mainSong.src = song;
     playMusic();
+
+    const currentFav = favoriteUrls[musicIndex];
+
+    handleFavorite(favoriteUrls, currentFav);
   }
 }

@@ -13,7 +13,6 @@ const filter = document.getElementById("filter");
 const next = document.getElementById("next");
 const prev = document.getElementById("previous");
 
-const songResult = document.getElementById("songResult");
 const darkMode = document.getElementById("darkmode");
 const greeting = document.getElementById("greeting");
 const aboutMenu = document.getElementById("aboutMenu");
@@ -24,8 +23,9 @@ const favorite = document.getElementById("favorite");
 
 const fullPlayerBtn = document.getElementById("clickFullPlayer");
 const minimizeBtn = document.getElementById("minimizeBtn");
-const inputRange = document.getElementById("progress-bar");
-const favBtn = document.getElementById("favBtn");
+const progressBar = document.getElementById("progress-bar");
+const favListBtn = document.getElementById("favListBtn");
+const listFavSong = document.getElementById("listFavSong");
 
 export {
   musicName,
@@ -41,7 +41,6 @@ export {
   filter,
   next,
   prev,
-  songResult,
   darkMode,
   greeting,
   aboutMenu,
@@ -51,6 +50,7 @@ export {
   favorite,
   fullPlayerBtn,
   minimizeBtn,
-  inputRange,
-  favBtn,
+  progressBar,
+  favListBtn,
+  listFavSong,
 };

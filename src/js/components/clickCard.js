@@ -66,9 +66,14 @@ export default function clickCard(specificSong, mergedNextPage, favoriteUrls) {
 
       favorite.innerText = "favorite_border";
 
-      const currentUrl = mergedNextPage[index].url.slice(9);
+      const currentFav = {
+        thumbnail: thumbnailUrl,
+        song: mergedNextPage[index].url.slice(9),
+        artist,
+        title,
+      };
 
-      handleFavorite(favoriteUrls, currentUrl);
+      handleFavorite(favoriteUrls, currentFav);
     });
   });
 }
