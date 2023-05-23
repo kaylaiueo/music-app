@@ -9,6 +9,7 @@ import {
   repeatBtn,
   next,
   prev,
+  tabHeader,
 } from "../constants/constants.js";
 import handleFavorite from "./handleFavorite.js";
 
@@ -28,6 +29,8 @@ export default function clickCard(specificSong, mergedNextPage, favoriteUrls) {
       albumCover.src = thumbnailUrl;
       mainSong.src = song;
       playMusic();
+
+      tabHeader.innerText = `${title} - ${artist}`;
 
       let musicIndex = -1;
 
@@ -67,10 +70,10 @@ export default function clickCard(specificSong, mergedNextPage, favoriteUrls) {
       favorite.innerText = "favorite_border";
 
       const currentFav = {
-        thumbnail: thumbnailUrl,
-        song: mergedNextPage[index].url.slice(9),
         artist,
         title,
+        song: mergedNextPage[index].url.slice(9),
+        thumbnail: thumbnailUrl,
       };
 
       handleFavorite(favoriteUrls, currentFav);

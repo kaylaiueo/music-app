@@ -33,9 +33,11 @@ export default function handleFavorite(favoriteUrls, currentFav) {
     }
   };
 
-  favoriteUrls.forEach((fav) => {
-    if (currentFav.song === fav.song) {
-      favorite.innerText = "favorite";
-    }
-  });
+  if (favoriteUrls.length > 0) {
+    favoriteUrls.forEach((fav) => {
+      if (currentFav.song === fav.song) {
+        favorite.innerText = "favorite";
+      }
+    });
+  }
 }

@@ -15,7 +15,7 @@ const prev = document.getElementById("previous");
 
 const darkMode = document.getElementById("darkmode");
 const greeting = document.getElementById("greeting");
-const aboutMenu = document.getElementById("aboutMenu");
+const aboutMenuBtn = document.getElementById("aboutMenuBtn");
 const aboutMenuContent = document.getElementById("aboutMenuContent");
 const sectionHead = document.getElementById("sectionHead");
 const bottomPlayer = document.getElementById("bottomPlayer");
@@ -26,6 +26,8 @@ const minimizeBtn = document.getElementById("minimizeBtn");
 const progressBar = document.getElementById("progress-bar");
 const favListBtn = document.getElementById("favListBtn");
 const listFavSong = document.getElementById("listFavSong");
+const musicDetails = document.getElementById("music-details");
+const tabHeader = document.getElementById("tabHeader");
 
 export {
   musicName,
@@ -43,7 +45,7 @@ export {
   prev,
   darkMode,
   greeting,
-  aboutMenu,
+  aboutMenuBtn,
   aboutMenuContent,
   sectionHead,
   bottomPlayer,
@@ -53,4 +55,6 @@ export {
   progressBar,
   favListBtn,
   listFavSong,
+  musicDetails,
+  tabHeader,
 };

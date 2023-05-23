@@ -14,11 +14,11 @@ import {
   progressBar,
   sectionHead,
   listFavSong,
+  musicDetails,
 } from "../constants/constants.js";
 
 export default function clickFullPlayer() {
   const footer = document.querySelector("footer");
-  const musicDetails = document.getElementById("music-details");
   const minimize = document.querySelector("#minimizeBtn i");
   const handlePadding = document.querySelector("#bottomPlayer div");
   const currentTime = document.getElementById("currentTime");
@@ -31,7 +31,6 @@ export default function clickFullPlayer() {
     handlePadding.classList.add("pb-10");
     fullPlayerBtn.classList.replace("gap-2", "gap-20");
     fullPlayerBtn.classList.add("flex-col");
-    musicDetails.classList.replace("items-start", "items-center");
     musicName.classList.replace("text-sm", "text-xl");
     musicArtist.classList.remove("hidden");
     albumCover.classList.replace("w-11", "w-11/12");
@@ -62,6 +61,16 @@ export default function clickFullPlayer() {
     if (sectionHead.innerText == "Favorite") {
       listFavSong.classList.replace("flex", "hidden");
     }
+
+    if (!musicName.classList.contains("animate-marquee")) {
+      musicDetails.classList.add("justify-center");
+      musicDetails.classList.add("items-center");
+    }
+
+    document.documentElement.style.setProperty(
+      "--textWidth",
+      musicDetails.clientWidth - musicName.clientWidth - 10 + "px"
+    );
   };
 
   minimize.onclick = () => {
@@ -85,7 +94,8 @@ export default function clickFullPlayer() {
     footer.classList.add("relative");
     repeatBtn.classList.add("hidden");
     bottomPlayer.classList.replace("h-full", "h-20");
-    musicDetails.classList.replace("items-center", "items-start");
+    musicDetails.classList.remove("justify-center");
+    musicDetails.classList.remove("items-center");
     musicName.classList.replace("text-xl", "text-sm");
     musicArtist.classList.add("hidden");
     albumCover.classList.replace("w-11/12", "w-11");
@@ -101,5 +111,10 @@ export default function clickFullPlayer() {
     } else {
       listSong.classList.replace("hidden", "flex");
     }
+
+    document.documentElement.style.setProperty(
+      "--textWidth",
+      musicDetails.clientWidth - musicName.clientWidth - 10 + "px"
+    );
   };
 }

@@ -1,7 +1,12 @@
 import handleFavorite from "../components/handleFavorite.js";
 import { playMusic } from "../components/control.js";
 import marquee from "../components/marquee.js";
-import { musicArtist, albumCover, mainSong } from "../constants/constants.js";
+import {
+  musicArtist,
+  albumCover,
+  mainSong,
+  tabHeader,
+} from "../constants/constants.js";
 
 export default async function loadFavSong(musicIndex, favoriteUrls) {
   if (favoriteUrls.length > 0) {
@@ -20,6 +25,8 @@ export default async function loadFavSong(musicIndex, favoriteUrls) {
     albumCover.src = thumbnailUrl;
     mainSong.src = song;
     playMusic();
+
+    tabHeader.innerText = `${title} - ${artist}`;
 
     const currentFav = favoriteUrls[musicIndex];
 

@@ -1,5 +1,5 @@
 import {
-  aboutMenu,
+  aboutMenuBtn,
   aboutMenuContent,
   listSong,
   sectionHead,
@@ -7,7 +7,7 @@ import {
 } from "../constants/constants.js";
 
 export default function showAbout() {
-  aboutMenu.onclick = () => {
+  aboutMenuBtn.onclick = () => {
     if (sectionHead.innerText != "Favorite") {
       if (!listSong.classList.contains("hidden")) {
         sectionHead.innerText = "About";

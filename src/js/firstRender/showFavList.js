@@ -21,10 +21,13 @@ export default function showFav() {
     if (sectionHead.innerText != "About") {
       if (!listSong.classList.contains("hidden")) {
         sectionHead.innerText = "Favorite";
+        favListBtn.classList.add("underline");
       } else if (listSong.children[0].id == "specific-song") {
         sectionHead.innerText = "Music";
+        favListBtn.classList.remove("underline");
       } else {
         sectionHead.innerText = "Music to start ur day";
+        favListBtn.classList.remove("underline");
       }
 
       if (

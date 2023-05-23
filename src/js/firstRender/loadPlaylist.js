@@ -6,6 +6,7 @@ import {
   mainSong,
   listSong,
   listFavSong,
+  tabHeader,
 } from "../constants/constants.js";
 
 export default async function loadPlaylist(musicIndex, playlist) {
@@ -28,5 +29,7 @@ export default async function loadPlaylist(musicIndex, playlist) {
     albumCover.src = thumbnailUrl;
     mainSong.src = song;
     playMusic();
+
+    tabHeader.innerText = `${title} - ${artist}`;
   }
 }

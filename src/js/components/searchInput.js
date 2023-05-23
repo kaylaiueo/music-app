@@ -29,6 +29,8 @@ export default function searchInput() {
       }
 
       sectionHead.innerText = "Music";
+      favListBtn.classList.remove("underline");
+
       songList();
       search.blur();
     }
@@ -56,6 +58,8 @@ export default function searchInput() {
       }
 
       sectionHead.innerText = "Music";
+      favListBtn.classList.remove("underline");
+
       songList();
       search.blur();
     }
