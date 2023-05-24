@@ -8,8 +8,11 @@ No JavaScript libraries and back-end included, just fetched from [Piped API](htt
 
 ## Features
 
-- Ad-free
-- Full music player on mobile screen.
+- Ad free
+- Favorite
+- Dark mode
+- Search song what you want
+- Full screen song player on mobile
 
 ## Usage Instructions for Contributors
 
@@ -26,17 +29,8 @@ cd music-app
 install-tailwind-by-yourself
 ```
 
-## Known Issues
-
-This project is still experimental and not really stable.
-
-Some of the basic features are on progress such as:
-
-- List of favorite songs.
-
 ## Acknowledgements
 
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Google Material Icons](https://fonts.google.com/icons)
 - [Poppins font](https://fonts.google.com/specimen/Poppins?query=poppin)
-- credit lainnya
