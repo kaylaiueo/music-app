@@ -2,7 +2,7 @@ import getSongs from "./getSongs.js";
 import getEncodedUrl from "./getEncodedUrl.js";
 import cards from "../components/cards.js";
 import clickCard from "../components/clickCard.js";
-import goNextPage from "./goNextPage.js";
+import loadNextPage from "./loadNextPage.js";
 
 export default async function songList() {
   const favStorage = JSON.parse(localStorage.getItem("fav"));
@@ -23,5 +23,5 @@ export default async function songList() {
   const specificSong = document.querySelectorAll("#specific-song");
   clickCard(specificSong, mergedNextPage, favoriteUrls);
 
-  goNextPage(nextPageUrl, mergedNextPage);
+  loadNextPage(nextPageUrl, mergedNextPage);
 }

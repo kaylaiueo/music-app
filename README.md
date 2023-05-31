@@ -26,7 +26,14 @@ Open the directory and install Tailwind CSS:
 
 ```bash
 cd music-app
-install-tailwind-by-yourself
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init
+```
+
+And start your build process:
+
+```bash
+npm run dev
 ```
 
 ## Acknowledgements
@@ -34,3 +41,4 @@ install-tailwind-by-yourself
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Google Material Icons](https://fonts.google.com/icons)
 - [Poppins font](https://fonts.google.com/specimen/Poppins?query=poppin)
+- [Vite](https://vitejs.dev/)

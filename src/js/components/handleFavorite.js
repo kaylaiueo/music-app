@@ -27,6 +27,9 @@ export default function handleFavorite(favoriteUrls, currentFav) {
             localStorage.setItem("fav", JSON.stringify(favoriteUrls));
 
             favCard(favoriteUrls);
+
+            const favSong = document.querySelectorAll("#favSong");
+            clickFav(favSong, favoriteUrls);
           }
         });
         break;

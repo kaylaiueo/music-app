@@ -10,7 +10,7 @@ import {
 } from "../constants/constants.js";
 
 export default async function loadFavSong(musicIndex, favoriteUrls) {
-  if (favoriteUrls.length > 0) {
+  if (favoriteUrls != null) {
     const endpoint = `https://pipedapi.kavin.rocks/streams/${favoriteUrls[musicIndex].song}`;
     const response = await fetch(endpoint);
     const { uploader, title, thumbnailUrl, audioStreams } =

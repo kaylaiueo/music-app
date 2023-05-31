@@ -3,5 +3,5 @@ export default async function getStreamUrl(mergedNextPage, index) {
     index
   ].url.slice(9)}`;
   const response = await fetch(endpoint);
-  return await response.json();
+  return response.json();
 }

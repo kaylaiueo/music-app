@@ -4,7 +4,7 @@ import searchInput from "./components/searchInput.js";
 import { playPause } from "./components/control.js";
 import firstRender from "./firstRender/firstRender.js";
 import handleDarkMode from "./components/handleDarkMode.js";
-import showFav from "./firstRender/showFavList.js";
+import showFav from "./firstRender/showFav.js";
 import showAbout from "./components/showAbout.js";
 import getColor from "./components/getColor.js";
 

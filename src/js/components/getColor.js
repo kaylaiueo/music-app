@@ -1,6 +1,5 @@
 import {
   albumCover,
-  musicArtist,
   bottomPlayer,
   playPauseBtn,
 } from "../constants/constants.js";
@@ -35,13 +34,11 @@ export default function getColor() {
       if (rgb[1] <= 127) {
         bottomPlayer.classList.add("text-white");
         playPauseBtn.classList.add("border-white");
-        musicArtist.classList.replace("text-gray-600", "text-gray-400");
       } else if (rgb[1] > 127) {
         bottomPlayer.classList.remove("dark:text-white");
         bottomPlayer.classList.remove("text-white");
         playPauseBtn.classList.remove("border-white");
         playPauseBtn.classList.remove("dark:border-white");
-        musicArtist.classList.replace("text-gray-400", "text-gray-600");
       }
     };
   }

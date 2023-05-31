@@ -63,6 +63,11 @@ export default function clickFullPlayer() {
       listFavSong.classList.replace("flex", "hidden");
     }
 
+    document.documentElement.style.setProperty(
+      "--textWidth",
+      musicDetails.clientWidth - musicName.clientWidth - 5 + "px"
+    );
+
     if (musicName.clientWidth < musicDetails.clientWidth) {
       musicName.classList.remove("animate-marquee");
       musicDetails.classList.add("justify-center");
@@ -111,6 +116,11 @@ export default function clickFullPlayer() {
     } else {
       listSong.classList.replace("hidden", "flex");
     }
+
+    document.documentElement.style.setProperty(
+      "--textWidth",
+      musicDetails.clientWidth - musicName.clientWidth - 5 + "px"
+    );
 
     if (musicName.clientWidth > musicDetails.clientWidth) {
       musicName.classList.add("animate-marquee");

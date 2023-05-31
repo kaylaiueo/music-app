@@ -1,10 +1,10 @@
-import getEncodedUrl from "../api/getEncodedUrl.js";
-import getNextPage from "../api/getNextPage.js";
+import getEncodedUrl from "./getEncodedUrl.js";
+import getNextPage from "./getNextPage.js";
 import clickCard from "../components/clickCard.js";
 import nextPageCard from "../components/nextPageCard.js";
 import { bottomPlayer } from "../constants/constants.js";
 
-export default function goNextPage(nextPageUrl, mergedNextPage) {
+export default function loadNextPage(nextPageUrl, mergedNextPage) {
   window.onscroll = async function () {
     const pageHeight = Math.max(document.documentElement.scrollHeight);
 

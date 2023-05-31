@@ -1,7 +1,7 @@
 import { listSong } from "../constants/constants.js";
 import playlist from "./playlist.js";
 
-export default function firstRenderCard() {
+export default function playlistCard() {
   listSong.innerHTML = playlist
     .map((list) => {
       return `
@@ -14,10 +14,10 @@ export default function firstRenderCard() {
               src="${list.thumbnail}"
               loading="lazy"
               alt="song album"
-              class="w-full aspect-square object-cover" />
+              class="w-32 h-32 aspect-square object-cover" />
           </div>
           <div class="pt-2">
-            <h3 class="font-bold text-sm truncate">${list.title}</h3>
+            <h3 class="font-semibold text-sm truncate">${list.title}</h3>
             <p class="font-semibold text-sm text-gray-500 line-clamp-2">
               ${list.artist}
             </p>

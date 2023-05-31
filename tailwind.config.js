@@ -1,12 +1,9 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+export default {
   darkMode: "class",
-  content: ["index.html", "./src/**/*.{html,js}"],
+  content: ["./index.html", "./src/**/*.{html,js}"],
   theme: {
     extend: {
-      fontFamily: {
-        poppins: ["Poppins", "sans-serif"],
-      },
       keyframes: {
         marquee: {
           "0%": { transform: "translateX(0%)" },

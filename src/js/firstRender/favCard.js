@@ -12,7 +12,7 @@ export default function favCard(favoriteUrls) {
               src="${fav.thumbnail}"
               loading="lazy"
               alt="song album"
-              class="w-full aspect-square object-cover" />
+              class="w-32 h-32 aspect-square object-cover" />
           </div>
           <div class="pt-2">
             <h3 class="font-bold text-sm truncate">${fav.title}</h3>
